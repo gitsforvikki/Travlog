@@ -8,7 +8,7 @@ import Navbar from "./components/header-compos/Navbar";
 export default function App() {
   return (
     <div className="mb-36">
-    {/* <Navbar/> */}
+    <Navbar/>
     <Dashboard/>
     <Service/>
     <TopDesignation/>
