@@ -63,13 +63,13 @@ const Footer = () => {
               <div className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 md:grid-cols-3  lg:grid-cols-4 ">
                 {footerData.map((item) => {
                   return (
-                    <div className="">
+                    <div key={item.title} className="">
                       <h1 className="mb-4 text-2xl font-semibold">
                         {item.title}
                       </h1>
                       <div className="flex flex-col gap-y-4">
                         {item.subtitle.map((each) => {
-                          return <h1 className="text-gray-500">{each}</h1>;
+                          return <h1 key={each} className="text-gray-500  hover:underline hover:font-bold">{each}</h1>;
                         })}
                       </div>
                     </div>

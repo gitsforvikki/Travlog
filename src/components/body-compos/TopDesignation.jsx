@@ -2,6 +2,8 @@ import Reactangle1 from "../../assets/top-designation/Rectangle-1.svg";
 import Reactangle2 from "../../assets/top-designation/Rectangle-2.svg";
 import Reactangle3 from "../../assets/top-designation/Rectangle-3.svg";
 import star from "../../assets/top-designation/Star.svg";
+import React, { useRef } from "react";
+import Slider from "react-slick";
 
 const data = [
   {
@@ -42,7 +44,10 @@ const TopDesignation = () => {
         <div className=" flex flex-col gap-y-6 justify-center items-center  md:flex-row lg:justify-evenly">
           {data.map((each) => {
             return (
-              <div key={each.title} className="w-[350px] shadow-lg  px-3 pb-4 flex flex-col  gap-y-7">
+              <div
+                key={each.title}
+                className="w-[350px] shadow-lg  px-3 pb-4 flex flex-col  gap-y-7  transition ease-in-out delay-150  hover:scale-95 duration-700"
+              >
                 <div className="relative">
                   <img src={each.image} alt="" className="rounded-xl  " />
                   {/* <div className="bg-gray-500 w-20 flex gap-x-4  py-1 px-3 rounded-3xl  absolute top-2 left-72">
@@ -68,7 +73,7 @@ const TopDesignation = () => {
                       </h1>
                     </div>
                     <div className="">
-                      <button className="bg-gradient-to-tl from-[#8482FF] to-[#7723FE] text-sm text-white py-2 px-3 rounded-2xl">
+                      <button className=" transition ease-in-out delay-150  hover:scale-110 duration-500  bg-gradient-to-tl from-[#8482FF] to-[#7723FE] text-sm text-white py-2 px-3 rounded-2xl">
                         See More
                       </button>
                     </div>

@@ -66,9 +66,9 @@ const Adventure = () => {
           </div>
         </div>
         <div className="flex flex-col gap-y-4">
-          <div className=" flex gap-x-4 md:gap-x-10 items-center border-b-2 border-gray-100 pb-6">
+          <div className=" flex flex-col sm:flex-row gap-x-4 md:gap-x-10 items-center border-b-2 border-gray-100 pb-6">
             <div className="flex justify-center items-center ">
-              <div className="bg-gray-100 rounded-full w-[100px] h-[100px] flex items-center justify-center">
+              <div className="bg-gray-100 rounded-full w-[100px] h-[100px] flex items-center justify-center animate-bounce hover:animate-none">
                 <img src={thumbs} alt="heart" className="w-14 h-14 " />
               </div>
             </div>
@@ -81,9 +81,9 @@ const Adventure = () => {
             </div>
           </div>
 
-          <div className=" flex gap-x-4 md:gap-x-10 items-center border-b-2 border-gray-100 pb-6">
+          <div className=" flex flex-col sm:flex-row gap-x-4 md:gap-x-10 items-center border-b-2 border-gray-100 pb-6">
             <div className="flex justify-center items-center ">
-              <div className="bg-gray-100 rounded-full w-[100px] h-[100px] flex items-center justify-center">
+              <div className="bg-gray-100 rounded-full w-[100px] h-[100px] flex items-center justify-center animate-bounce hover:animate-none">
                 <img src={heart} alt="heart" className="w-14 h-14 " />
               </div>
             </div>
@@ -96,9 +96,9 @@ const Adventure = () => {
             </div>
           </div>
 
-          <div className=" flex gap-x-4 md:gap-x-10 items-center border-b-2 border-gray-100 pb-6">
+          <div className=" flex flex-col sm:flex-row gap-x-4 md:gap-x-10 items-center border-b-2 border-gray-100 pb-6">
             <div className="flex justify-center items-center ">
-              <div className="bg-gray-100 rounded-full w-[100px] h-[100px] flex items-center justify-center">
+              <div className="bg-gray-100 rounded-full w-[100px] h-[100px] flex items-center justify-center animate-bounce hover:animate-none">
                 <img src={eject} alt="heart" className="w-14 h-14 " />
               </div>
             </div>
@@ -115,11 +115,11 @@ const Adventure = () => {
 
       {/* newslette */}
       <div className="mx-4">
-        <div className=" py-10 bg-yellow-400 rounded-xl">
+        <div className=" py-10 bg-[#FACD49] lg:bg-transparent rounded-xl  lg:relative flex justify-center">
           <img src={newsletter} alt="newsletter" className="hidden lg:block" />
-          <div className="flex flex-col gap-y-6">
+          <div className="flex flex-col gap-y-6 lg:absolute lg:top-1/2 lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2">
             <div className="flex flex-col gap-y-2 justify-center items-center ">
-              <h1 className=" text-2xl font-semibold lg:text-xl">Sign up to our newsletter</h1>
+              <h1 className=" text-2xl font-semibold lg:text-3xl ">Sign up to our newsletter</h1>
               <p className="text-gray-700 text-sm"> Lorem ipsum dolor sit amet consectetur. Egestas</p>
               <p className="text-gray-700 text-sm">et feugiat purus
                 enim facilisi nunc blandit nullam.</p>
@@ -132,7 +132,7 @@ const Adventure = () => {
                   className="outline-none"
                 />
                 <div className=" bg-[#816AFF] text-white rounded-xl flex justify-center items-center">
-                  <img src={vector} alt="vector" />
+                  <img src={vector} alt="vector" className="animate-ping hover:animate-none" />
                 </div>
               </div>
             </div>

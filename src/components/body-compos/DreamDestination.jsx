@@ -17,28 +17,28 @@ const DreamDesignation = () => {
               assist you in finding the destination of your dreams.
             </p>
           </div>
-          <div className="grid grid-cols-2 gap-3 place-content-center mx-4">
-            <div className="w-40 md:w-30 h-32  border border-gray-200 shadow-lg rounded-xl flex items-center justify-center">
+          <div className="grid grid-cols-1 gap-y-4 justify-items-center md:grid-cols-2 gap-3 place-content-center mx-4">
+            <div className=" w-1/2 py-4   md:w-40 md:w-30 md:h-32  border border-gray-200 shadow-lg rounded-xl flex items-center justify-center">
               <div className="text-center">
-                <h1 className="text-[#F85E9F] text-3xl font-semibold">4K+</h1>
+                <h1 className="text-[#F85E9F] text-3xl font-semibold animate-bounce">4K+</h1>
                 <h1 className="text-sm">Satisfied Customers</h1>
               </div>
             </div>
-            <div className="w-40 md:w-30 h-32 border border-gray-200 shadow-lg rounded-xl flex items-center justify-center">
+            <div className=" w-1/2 py-4  md:w-40 md:w-30 md:h-32  border border-gray-200 shadow-lg rounded-xl flex items-center justify-center">
               <div className="text-center">
-                <h1 className="text-[#F85E9F] text-3xl font-semibold">1000+</h1>
+                <h1 className="text-[#F85E9F] text-3xl font-semibold animate-bounce">1000+</h1>
                 <h1 className="text-sm">Global Destinations</h1>
               </div>
             </div>
-            <div className="w-40 h-32 border border-gray-200 shadow-lg rounded-xl flex items-center justify-center">
+            <div className=" w-1/2 py-4   md:w-40 md:w-30 md:h-32 border border-gray-200 shadow-lg rounded-xl flex items-center justify-center">
               <div className="text-center">
-                <h1 className="text-[#F85E9F] text-3xl font-semibold">24/7</h1>
+                <h1 className="text-[#F85E9F] text-3xl font-semibold animate-bounce">24/7</h1>
                 <h1 className="text-sm">Customer Support</h1>
               </div>
             </div>
-            <div className="w-40 h-32 border border-gray-200 shadow-lg rounded-xl flex items-center justify-center">
+            <div className=" w-1/2 py-4   md:w-40 md:w-30 md:h-32  border border-gray-200 shadow-lg rounded-xl flex items-center justify-center">
               <div className="text-center">
-                <h1 className="text-[#F85E9F] text-3xl font-semibold">100%</h1>
+                <h1 className="text-[#F85E9F] text-3xl font-semibold animate-bounce">100%</h1>
                 <h1 className="text-sm">Dedication</h1>
               </div>
             </div>

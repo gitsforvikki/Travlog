@@ -90,7 +90,7 @@ const AllDestination = () => {
       <div className=" container mx-auto grid grid-cols-1 gap-6 justify-items-center md:grid-cols-2 xl:grid-cols-3 ">
         {data.map((each) => {
           return (
-            <div key={each.title} className="  w-[350px] shadow-lg  px-3 pb-4 flex flex-col gap-y-7">
+            <div key={each.title} className="  w-[350px] shadow-lg  px-3 pb-4 flex flex-col gap-y-7  transition ease-in-out delay-150  hover:scale-110 duration-700">
               <div className="relative">
                 <img src={each.image} alt="" className="rounded-xl  " />
                 {/* <div className="bg-gray-500 w-20 flex gap-x-4  py-1 px-3 rounded-3xl  absolute top-2 left-72">
