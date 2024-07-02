@@ -58,14 +58,14 @@ function CarouselControl() {
   };
   return (
     <div className="slider-container container mx-auto mt-20">
-      <div className="flex justify-between">
+      <div className="flex md:justify-between justify-center px-2">
         <div className="flex flex-col items-center  mb-5">
           <h1 className="text-[#F85E9F] text-lg">
             choose your next destination
           </h1>
           <h1 className="text-3xl xl:text-4xl ">Explore top destination</h1>
         </div>
-        <div style={{ textAlign: "center" }}>
+        <div style={{ textAlign: "center" }} className="hidden md:block space-x-3">
           <button className="py-3 px-4 rounded-full border" onClick={previous}>
             <img src={prev} />
           </button>
@@ -83,11 +83,11 @@ function CarouselControl() {
         }}
         {...settings}
       >
-        <div className="w-1/4 shadow-lg  px-3 pb-4 mx-6 flex flex-col justify-items-center  transition ease-in-out delay-150  hover:scale-95 duration-700">
+        <div className=" shadow-lg  px-3 pb-4 mx-6 flex flex-col transition ease-in-out delay-150  hover:scale-95 duration-700">
           <div className="flex justify-center w-full items-center mb-10">
             <img src={Reactangle2} alt="" className="rounded-xl  " />
           </div>
-          <div className="flex flex-col  gap-y-10">
+          <div className="flex flex-col w-full  gap-y-10">
             <div className=" flex flex-col gap-y-4">
               <h1 className="text-[#0C111F] text-2xl font-semibold">
                 Cappadocia
@@ -97,12 +97,12 @@ function CarouselControl() {
                 simply dummy...see more
               </p>
             </div>
-            <div className="w-full flex justify-between">
+            <div className="w-full flex  items-center gap-y-3 md:flex-row  justify-between">
               <div className="">
                 <h1 className="text-gray-900 text-lg">Machu Picchu, Peru</h1>
                 <h1 className="text-gray-400">
                   <span className="text-black font-semibold text-xl">
-                    ${"599"}
+                    ${"449"}
                   </span>{" "}
                   x 12 interest free
                 </h1>
@@ -115,26 +115,26 @@ function CarouselControl() {
           </div>
         </div>
 
-        <div className="w-1/4 shadow-lg  px-3 pb-4 mx-6 flex flex-col justify-items-center  transition ease-in-out delay-150  hover:scale-95 duration-700">
+        <div className="w-[200px] shadow-lg  px-3 pb-4 mx-6 flex flex-col justify-items-center  transition ease-in-out delay-150  hover:scale-95 duration-700">
           <div className="flex justify-center w-full items-center mb-10">
             <img src={Reactangle1} alt="" className="rounded-xl  " />
           </div>
-          <div className="flex flex-col  gap-y-10">
+          <div className="flex flex-col   gap-y-10">
             <div className=" flex flex-col gap-y-4">
               <h1 className="text-[#0C111F] text-2xl font-semibold">
-               Nice and Cannes
+                Nice and Cannes
               </h1>
               <p className="text-gray-500">
                 Lorem Ipsum is simply dummy text of the printing and Ipsum is
                 simply dummy...see more
               </p>
             </div>
-            <div className="w-full flex justify-between">
+            <div className="w-full flex  items-center gap-y-3 md:flex-row  justify-between">
               <div className="">
-                <h1 className="text-gray-900 text-lg">French Riviera, France</h1>
+                <h1 className="text-gray-900 text-lg">Riviera, France</h1>
                 <h1 className="text-gray-400">
                   <span className="text-black font-semibold text-xl">
-                    ${"850"}
+                    ${"999"}
                   </span>{" "}
                   x 12 interest free
                 </h1>
@@ -147,21 +147,19 @@ function CarouselControl() {
           </div>
         </div>
 
-        <div className="w-1/4 shadow-lg  px-3 pb-4 mx-6 flex flex-col justify-items-center  transition ease-in-out delay-150  hover:scale-95 duration-700">
+        <div className=" shadow-lg  px-3 pb-4 mx-6 flex flex-col justify-items-center  transition ease-in-out delay-150  hover:scale-95 duration-700">
           <div className="flex justify-center w-full items-center mb-10">
             <img src={Reactangle3} alt="" className="rounded-xl  " />
           </div>
           <div className="flex flex-col  gap-y-10">
             <div className=" flex flex-col gap-y-4">
-              <h1 className="text-[#0C111F] text-2xl font-semibold">
-              Seville
-              </h1>
+              <h1 className="text-[#0C111F] text-2xl font-semibold">Seville</h1>
               <p className="text-gray-500">
                 Lorem Ipsum is simply dummy text of the printing and Ipsum is
                 simply dummy...see more
               </p>
             </div>
-            <div className="w-full flex justify-between">
+            <div className="w-full flex  items-center gap-y-3 md:flex-row  justify-between">
               <div className="">
                 <h1 className="text-gray-900 text-lg">Seville, Spain</h1>
                 <h1 className="text-gray-400">
@@ -178,9 +176,6 @@ function CarouselControl() {
             </div>
           </div>
         </div>
-
-       
-        
       </Slider>
     </div>
   );

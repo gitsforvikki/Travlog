@@ -45,7 +45,7 @@ const Adventure = () => {
             </div>
           </div>
         </div>
-        <div className="mx-4">
+        <div className="mx-4 flex w-full justify-center">
           <img src={man} alt="man" />
         </div>
       </div>
@@ -61,7 +61,7 @@ const Adventure = () => {
               guides bring your adventures to life with their expertise, passion
             </p>
           </div>
-          <div className="">
+          <div className=" flex justify-center w-full">
             <img src={house} alt="house" />
           </div>
         </div>
@@ -119,10 +119,16 @@ const Adventure = () => {
           <img src={newsletter} alt="newsletter" className="hidden lg:block" />
           <div className="flex flex-col gap-y-6 lg:absolute lg:top-1/2 lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2">
             <div className="flex flex-col gap-y-2 justify-center items-center ">
-              <h1 className=" text-2xl font-semibold lg:text-3xl ">Sign up to our newsletter</h1>
-              <p className="text-gray-700 text-sm"> Lorem ipsum dolor sit amet consectetur. Egestas</p>
-              <p className="text-gray-700 text-sm">et feugiat purus
-                enim facilisi nunc blandit nullam.</p>
+              <h1 className=" text-2xl font-semibold lg:text-3xl ">
+                Sign up to our newsletter
+              </h1>
+              <p className="text-gray-700 text-sm">
+                {" "}
+                Lorem ipsum dolor sit amet consectetur. Egestas
+              </p>
+              <p className="text-gray-700 text-sm">
+                et feugiat purus enim facilisi nunc blandit nullam.
+              </p>
             </div>
             <div className="flex justify-center">
               <div className="flex justify-between  bg-white p-1 rounded-xl">
@@ -132,7 +138,11 @@ const Adventure = () => {
                   className="outline-none"
                 />
                 <div className=" bg-[#816AFF] text-white rounded-xl flex justify-center items-center">
-                  <img src={vector} alt="vector" className="animate-ping hover:animate-none" />
+                  <img
+                    src={vector}
+                    alt="vector"
+                    className="animate-ping hover:animate-none"
+                  />
                 </div>
               </div>
             </div>

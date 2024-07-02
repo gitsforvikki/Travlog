@@ -79,7 +79,7 @@ const AllDestination = () => {
             <li className="text-gray-400 hover:text-black hover:cursor-pointer font-semibold">
               Island
             </li>
-            <li className="text-[#F85E9F] hover:text-black hover:cursor-pointer font-semibold">
+            <li className="text-[#F85E9F] border-b-2 border-[#F85E9F] hover:text-black hover:cursor-pointer font-semibold">
               See All
             </li>
           </ol>
@@ -92,11 +92,7 @@ const AllDestination = () => {
           return (
             <div key={each.title} className="  w-[350px] shadow-lg  px-3 pb-4 flex flex-col gap-y-7  transition ease-in-out delay-150  hover:scale-110 duration-700">
               <div className="relative">
-                <img src={each.image} alt="" className="rounded-xl  " />
-                {/* <div className="bg-gray-500 w-20 flex gap-x-4  py-1 px-3 rounded-3xl  absolute top-2 left-72">
-                    <img src={star} alt="start" />
-                    <p className=""> 5.0</p>
-                  </div> */}
+              <img src={each.image} alt="" className="rounded-xl  " />
               </div>
               <div className="flex flex-col gap-y-10">
                 <div className="">

@@ -3,3 +3,6 @@
 @tailwind utilities;
 
 
+.slick-slide div {
+  width: 95%;
+}
